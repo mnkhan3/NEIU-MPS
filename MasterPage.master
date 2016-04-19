@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NEIU Forms</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+     <header>
+	  <div id="strapline">
+	    <div id="welcome_slogan">
+	      <h3>NEIU Media Services Department <span>Services</span></h3>
+	    </div><!--close welcome_slogan-->
+      </div><!--close strapline-->	  
+	  <nav>
+	    <div id="menubar">
+          <ul id="nav">
+            <li class="current"><a href="index.aspx">Home</a></li>
+            <li><a href="StudentFrom.aspx">Studen Form</a></li>
+            <li><a href="ProfessorForm.aspx">Professor Form</a></li>
+            <li><a href="">Video Form</a></li>
+            <li><a href="">Staff</a></li>
+          </ul>
+        </div><!--close menubar-->	
+      </nav>
+    </header>
+    <div id="site_content">	
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>	
+	  
+	  
+       </div><!--close site_content-->
+        <footer>
+	  <a href="index.aspx">Home</a> | <a href="https://neiuport.neiu.edu/cp/home/displaylogin">NEIU Port</a> | <a href="http://www.neiu.edu/">NEIU</a> | <a href="https://www.facebook.com/?_rdr">Facebook</a> | <a href="https://twitter.com/?lang=en">Twitter</a><br/><br/>
+	  <a href="https://instagram.com/">Instagram</a> |  <a href="http://www.heartinternet.co.uk/vps/">Virtual Server</a>  | Development Team: <a>Fashi Sharif, Nayeem Khan, Abdul Khan</a>
+    </footer>
+	
+  </div><!--close main-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+    
+    
+    
+    </form>
+</body>
+</html>
